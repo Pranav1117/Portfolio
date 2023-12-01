@@ -39,8 +39,6 @@ setTimeout(() => {
   nav.style.transform = "translate(0px)";
 }, 3000);
 
-
-
 home.addEventListener("click", function () {
   heading.innerText = "WELCOME";
   info.innerText =
@@ -135,15 +133,15 @@ contact.addEventListener("click", () => {
     <div class='contact-icon-wrapper'>
         <div>
         <a href='https://www.linkedin.com/in/pranav-bavaskar-a154a5232/' target="_blank">
-          <img src='../media/Contact Icons/linkedin icon.png' alt='logo'/>
+          <img src='../media/Contact Icons/linkedin icon.png' alt='linkedIn'/>
         </a>
         
         <a href='https://twitter.com/Wei_Dev' target='_blank'>
-          <img src='../media/Contact Icons/x icon.jpg' alt='logo'/>
+          <img src='../media/Contact Icons/x icon.jpg' alt='X'/>
         </a>
         
         <a href='mailto:pranavbavaskar1@gmail.com'>
-          <img src='../media/Contact Icons/mail icon.png' alt='logo'/>
+          <img src='../media/Contact Icons/mail icon.png' alt='Mail'/>
         </a>
 
 
