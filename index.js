@@ -114,10 +114,10 @@ handson.addEventListener("click", () => {
 
 contact.addEventListener("click", () => {
   heading.innerText = "Connect With Me";
-  heading.style.color = "#4c919";
+  // heading.style.color = "#4c919";
   info.innerText = "";
   projectSection.style.display = "none";
-  4;
+  // 4;
   section.style.border = "none";
 
   home.classList.remove("active");
@@ -133,15 +133,15 @@ contact.addEventListener("click", () => {
     <div class='contact-icon-wrapper'>
         <div>
         <a href='https://www.linkedin.com/in/pranav-bavaskar-a154a5232/' target="_blank">
-          <img src='../media/Contact Icons/linkedin icon.png' alt='linkedIn'/>
+          <img src='./media/Contact Icons/linkedin icon.png' alt='linkedIn'/>
         </a>
         
         <a href='https://twitter.com/Wei_Dev' target='_blank'>
-          <img src='../media/Contact Icons/x icon.jpg' alt='X'/>
+          <img src='./media/Contact Icons/x icon.jpg' alt='X'/>
         </a>
         
         <a href='mailto:pranavbavaskar1@gmail.com'>
-          <img src='../media/Contact Icons/mail icon.png' alt='Mail'/>
+          <img src='./media/Contact Icons/mail icon.png' alt='Mail'/>
         </a>
 
 
