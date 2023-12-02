@@ -17,6 +17,9 @@ let projectSection = document.getElementById("project-sec");
 let navBtn = document.querySelectorAll(".nav-btn");
 let section = document.getElementById("section");
 
+let req=document.getElementById("open-request")
+
+
 setTimeout(() => {
   back1.style.top = "250px";
   back1.style.left = "-1%";

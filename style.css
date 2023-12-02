@@ -261,7 +261,7 @@ a{
 
 
 .logo{
-    font-size: 53px;
+    font-size: clamp(40px,53px,5vw);
     font-family: 'Satisfy', cursive;
     color: rgb(1 96 109);
     width: 84%;
@@ -308,15 +308,15 @@ section{
 }
 
 section h1{
-    font-size: 53px;
     text-align: center;
-
+    font-size: clamp(25px,53px,5vw);
 }
 
 section p{
-    font-size: 21px;
+    font-size: clamp(16px, 1.5vw, 24px);
     display: flex;
     justify-content: center;
+
 }
 
 nav{
@@ -339,7 +339,7 @@ nav ul:nth-child(2){
 nav ul li{
     text-align: center;
     list-style-type: none;
-    font-size:clamp(3rem,10vh,45vh);
+    font-size: clamp(16px, 6vw, 74px);
     /* font-size:6rem ; */
     font-weight: lighter;
     transform: rotate(8deg);
@@ -539,4 +539,37 @@ nav ul li:hover{
     /* transform:scale(1.1); */
     opacity:50%;
     
+}
+
+.open-request{
+    display: none;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    font-size: clamp(20px,5vw,40px);
+}
+
+
+
+@media only screen and (max-width:768px){
+    .open-request{
+        display: block;
+        opacity: 0; /* Set initial opacity to 0 */
+        animation: fadeIn 1s ease-out 3.2s forwards;
+    }
+
+    @keyframes fadeIn {
+        from {
+          opacity: 0; /* Start with 0 opacity (invisible) */
+        }
+        to {
+          opacity: 1; /* End with 1 opacity (fully visible) */
+        }
+      }
+
+
+    .main-wrapper{
+        display: none;
+    }
 }
